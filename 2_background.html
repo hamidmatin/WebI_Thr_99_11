@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 770px;
+        height: 500px;
+        margin-bottom: 20px;
+      }
+
+      #div1 {
+        background-color: rgb(245, 245, 125);
+
+        background-image: url('/images/download_1.jfif');
+        background-image: url('/images/download_2.jfif');
+        background-image: url('/images/download_3.jfif');
+      }
+      #div2 {
+        background-color: rgb(125, 237, 245);
+        background-image: url('/images/thumbnail/thomas.jpg');
+
+        background-repeat: repeat;
+        background-repeat: repeat-x;
+        background-repeat: repeat-y;
+        background-repeat: space;
+        background-repeat: round;
+        background-repeat: no-repeat;
+      }
+      #div3 {
+        background-color: rgb(241, 167, 235);
+        background-image: url('/images/img_5terre_sm.jpg');
+        background-repeat: no-repeat;
+
+        background-position-x: 100px;
+        background-position-x: 300px;
+        background-position-x: 50%;
+        background-position-x: 100%;
+        background-position-x: left;
+        background-position-x: center;
+        background-position-x: right;
+
+        background-position-y: 100px;
+        background-position-y: 50%;
+        background-position-y: 80%;
+        background-position-y: top;
+        background-position-y: center;
+        background-position-y: bottom;
+
+        /* background-position: x y; */
+        background-position: 100px 200px;
+        background-position: 200px 100px;
+        /* background-position: x center; */
+        background-position: 200px;
+
+        background-position: bottom;
+        background-position: bottom right;
+        background-position: center;
+      }
+
+      #div4 {
+        background-color: rgb(167, 241, 204);
+        background-image: url('/images/img_5terre.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+        background-attachment: scroll;
+
+        overflow: auto;
+        background-attachment: local;
+
+        background-attachment: fixed;
+
+        /* background: color image position repeat attachment; */
+        background: rgb(167, 241, 204) url('/images/img_5terre.jpg') no-repeat
+          center fixed;
+      }
+
+      #div5{
+        background: rgb(241, 167, 183) url('/images/img_lights.jpg') no-repeat center;
+
+        /* background-size: width height; */
+        background-size: 400px 600px;
+        background-size: 300px;
+        background-size: 800px;
+        background-size: 50%;
+        background-size: 50% 50%;
+        background-size: 50% 100%;
+
+        height: 300px;
+        height: 700px;
+        background-size: 100%;
+        background-size: 100% 100%;
+        background-size: contain;
+        background-size: cover;
+      }
+
+      #div6{
+        color: white;
+        font-size: 28px;
+        border: 30px dashed black;
+        padding: 50px;
+        background: rgb(241, 167, 183) url('/images/img_lights.jpg') no-repeat center;
+        background-size: 100% 100%;
+
+        background-origin: padding-box;
+        background-origin: border-box;
+        /* background-origin: content-box; */
+
+        background-clip: border-box;
+        background-clip: padding-box;
+        background-clip: content-box;
+      }
+
+      #div7{
+        background-color: rgb(167, 232, 241);
+        background-image: url('/images/img_5terre_sm.jpg'), 
+                          url('/images/img_forest_sm.jpg'),
+                          url('/images/download_1.jfif');
+        background-repeat: no-repeat, no-repeat, repeat;
+        background-position: bottom right, top right;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi itaque
+        quam sunt minus sed, alias deleniti libero, necessitatibus eius et quae
+        quod hic error iure excepturi, dolore facere aperiam nemo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi itaque
+        quam sunt minus sed, alias deleniti libero, necessitatibus eius et quae
+        quod hic error iure excepturi, dolore facere aperiam nemo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi itaque
+        quam sunt minus sed, alias deleniti libero, necessitatibus eius et quae
+        quod hic error iure excepturi, dolore facere aperiam nemo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi itaque
+        quam sunt minus sed, alias deleniti libero, necessitatibus eius et quae
+        quod hic error iure excepturi, dolore facere aperiam nemo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi itaque
+        quam sunt minus sed, alias deleniti libero, necessitatibus eius et quae
+        quod hic error iure excepturi, dolore facere aperiam nemo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi itaque
+        quam sunt minus sed, alias deleniti libero, necessitatibus eius et quae
+        quod hic error iure excepturi, dolore facere aperiam nemo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi itaque
+        quam sunt minus sed, alias deleniti libero, necessitatibus eius et quae
+        quod hic error iure excepturi, dolore facere aperiam nemo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi itaque
+        quam sunt minus sed, alias deleniti libero, necessitatibus eius et quae
+        quod hic error iure excepturi, dolore facere aperiam nemo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi itaque
+        quam sunt minus sed, alias deleniti libero, necessitatibus eius et quae
+        quod hic error iure excepturi, dolore facere aperiam nemo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi itaque
+        quam sunt minus sed, alias deleniti libero, necessitatibus eius et quae
+        quod hic error iure excepturi, dolore facere aperiam nemo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi itaque
+        quam sunt minus sed, alias deleniti libero, necessitatibus eius et quae
+        quod hic error iure excepturi, dolore facere aperiam nemo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi itaque
+        quam sunt minus sed, alias deleniti libero, necessitatibus eius et quae
+        quod hic error iure excepturi, dolore facere aperiam nemo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi itaque
+        quam sunt minus sed, alias deleniti libero, necessitatibus eius et quae
+        quod hic error iure excepturi, dolore facere aperiam nemo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi itaque
+        quam sunt minus sed, alias deleniti libero, necessitatibus eius et quae
+        quod hic error iure excepturi, dolore facere aperiam nemo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi itaque
+        quam sunt minus sed, alias deleniti libero, necessitatibus eius et quae
+        quod hic error iure excepturi, dolore facere aperiam nemo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi itaque
+        quam sunt minus sed, alias deleniti libero, necessitatibus eius et quae
+        quod hic error iure excepturi, dolore facere aperiam nemo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi itaque
+        quam sunt minus sed, alias deleniti libero, necessitatibus eius et quae
+        quod hic error iure excepturi, dolore facere aperiam nemo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi itaque
+        quam sunt minus sed, alias deleniti libero, necessitatibus eius et quae
+        quod hic error iure excepturi, dolore facere aperiam nemo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi itaque
+        quam sunt minus sed, alias deleniti libero, necessitatibus eius et quae
+        quod hic error iure excepturi, dolore facere aperiam nemo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi itaque
+        quam sunt minus sed, alias deleniti libero, necessitatibus eius et quae
+        quod hic error iure excepturi, dolore facere aperiam nemo.
+      </p>
+    </div>
+    <div id="div5"></div>
+    <div id="div6">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi itaque
+      quam sunt minus sed, alias deleniti libero, necessitatibus eius et quae
+      quod hic error iure excepturi, dolore facere aperiam nemo.
+    </div>
+    <div id="div7"></div>
+    
+  </body>
+</html>
