@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*
+        Pseudo-classes
+            selector:pseudo-classes{
+                ....
+                ....
+            }
+      */
+
+      /* unvisited link */
+      a:link {
+        text-decoration: none;
+        color: green;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        display: inline-block;
+        padding: 0.5em 1em;
+        background-color: rgb(190, 241, 190);
+      }
+
+      /* visited link */
+      a:visited {
+        color: white;
+        background-color: hotpink;
+      }
+
+      /* mouse over link */
+      a:hover {
+        text-decoration: underline;
+        color: fuchsia;
+        background-color: rgb(204, 243, 233);
+      }
+
+      /* selected link (left mouse button down)*/
+      a:active{
+        font-size: 14px;
+        background-color: rgb(230, 15, 15);
+        color: white;
+        padding: 1em 1.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://www.w3schools.com">W3Shools</a>
+    <a href="https://mft.info">MFT</a>
+    <a href="https://html.spec.whatwg.org/">HTML Standard</a>
+    <a href="https://en.wikipedia.org/wiki/HTML">HTML - Wikipedia</a>
+  </body>
+</html>
