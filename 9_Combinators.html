@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        border: 1px solid red;
+      }
+      section {
+        border: 1px solid green;
+      }
+      article {
+        border: 1px solid blue;
+      }
+      /*
+        A combinator is something that explains the relationship between the selectors.
+        selector combinator selector{}
+        selector combinator selector combinator selector{}
+        selector combinator selector combinator selector .....{}
+
+        child selector (>)
+        descendant selector (space)
+        adjacent sibling selector (+)
+        general sibling selector (~)
+      */
+
+      /* child selector (>) */
+      div > p {
+        color: red;
+      }
+      div > section > p {
+        color: green;
+      }
+      div > section > article > p {
+        color: blue;
+      }
+      div > section:hover > article > p {
+        background-color: rgb(155, 209, 253);
+      }
+
+      /* descendant selector (space) */
+      div p{
+        font-size: 1.5em;
+      }
+      div article p{
+        border-bottom: 1px solid #000;
+        /* color: yellow; */
+      }
+
+      /* adjacent sibling selector (+) */
+      div + p{
+        background-color: rgb(228, 122, 238);
+      }
+
+      /* general sibling selector (~) */
+      div ~ p{
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Paragraph 0 Not in the div.</p>
+    <div>
+      <p>Paragraph 1 in the div.</p>
+      <p>Paragraph 2 in the div.</p>
+      <section>
+        <p>Paragraph 3 in the div-section.</p>
+        <p>Paragraph 4 in the div-section.</p>
+        <article>
+          <p>Paragraph 5 in the div-section-article.</p>
+          <p>Paragraph 6 in the div-section-article.</p>
+        </article>
+        <p>Paragraph 7 in the div-section.</p>
+      </section>
+      <p>Paragraph 8 in the div.</p>
+    </div>
+    <!-- <span>sds</span> -->
+    <p>Paragraph 9. Not in a div.</p>
+    <p>Paragraph 10. Not in a div.</p>
+  </body>
+</html>
