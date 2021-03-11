@@ -19,17 +19,18 @@
       }
       .aside, .main{
         float: left;
-        text-align: center;
         height: 450px;
       }
 
       .aside{
         width: 20%;
         background-color: rgb(169, 248, 253);
+        text-align: center;
       }
       .main{
         width: 60%;
         background-color: rgb(222, 190, 240);
+        padding: 1em;
       }
       #footer{
         color: white;
@@ -52,20 +53,55 @@
       .nav-link:hover{
         background-color: black;
       }
+      .float-left{
+        float: left !important;
+      }
+      .float-right{
+        float: right !important;
+      }
+      .button{
+        display: block;
+        text-decoration: none;
+        color: white;
+        background-color: #4CAF50;
+        padding: .5em 1em;
+      }
+      .button:hover{
+        background-color: #46a049 !important;
+      }
+      .text-center{
+        text-align: center !important;
+      }
     </style>
   </head>
   <body>
     <div id="header">Header</div>
     <div class="nav">
-      <a href="#" class="nav-link">Home</a>
-      <a href="#" class="nav-link">HTML</a>
-      <a href="#" class="nav-link">CSS</a>
-      <a href="#" class="nav-link">JavaScript</a>
-      <a href="#" class="nav-link">SQL</a>
+      <div class="float-left">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">HTML</a>
+        <a href="#" class="nav-link">CSS</a>
+        <a href="#" class="nav-link">JavaScript</a>
+        <a href="#" class="nav-link">SQL</a>
+      </div>
+      <div class="float-right">
+        <a href="#" class="nav-link">Facebook</a>
+        <a href="#" class="nav-link">Instagram</a>
+        <a href="#" class="nav-link">Linkedin</a>
+      </div>
     </div>
     <div class="row">
       <div class="aside">Left Content</div>
-      <div class="main">Main Content</div>
+      <div class="main">
+        <h1>CSS Pseudo-classes</h1>
+        <div class="row">
+          <a href="#" class="button float-left">❮ Previous</a>
+          <a href="#" class="button float-right">Next ❯</a>
+        </div>
+
+        <h3>HTML Headings</h3>
+        <p>HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags.</p>
+      </div>
       <div class="aside">Right Content</div>
     </div>
     <div id="footer">Footer</div>
