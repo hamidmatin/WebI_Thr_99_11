@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #p1 {
+        font-size: 18px;
+        line-height: 1.5;
+        width: 75%;
+        border: 1px solid #cccccc;
+        margin: auto;
+        padding: 0.5em;
+
+        overflow: auto;
+        resize: none;
+        resize: horizontal;
+        resize: vertical;
+        resize: both;
+      }
+
+      /*
+        Pseudo-elements
+          A CSS pseudo-element is used to style specified parts of an element.
+
+        selector::pseudo-element{
+
+        }
+      */
+
+      /*
+        The ::first-line Pseudo-element
+
+        The ::first-line pseudo-element is used to add a special 
+        style to the first line of a text.
+
+        properties =>
+          font properties
+          color properties
+          background properties
+          word-spacing
+          letter-spacing
+          text-decoration
+          vertical-align
+          text-transform
+          line-height
+          clear
+      */
+      #p1::first-line {
+        color: red;
+        font-variant: small-caps;
+      }
+
+      /*
+        The ::first-letter Pseudo-element
+
+        The ::first-letter pseudo-element is used to add a special 
+        style to the first letter of a text.
+
+        properties => 
+          font properties
+          color properties 
+          background properties
+          margin properties
+          padding properties
+          border properties
+          text-decoration
+          vertical-align (only if "float" is "none")
+          text-transform
+          line-height
+          float
+          clear
+      */
+
+      #p1::first-letter{
+        color: blue;
+        font-size: 84px;
+        float: left;
+        line-height: .9;
+        margin-right: 10px;
+      }
+
+      li > .before{
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: url('/images/iconfinder_38_62695.png');
+        margin-right: 10px;
+      }
+      li > .after{
+        color: red;
+        font-style: italic;
+        margin-left: 5px;
+      }
+
+      /*
+        CSS - The ::before Pseudo-element
+          The ::before pseudo-element can be used to insert 
+          some content before the content of an element.
+
+        CSS - The ::after Pseudo-element
+          The ::after pseudo-element can be used to insert 
+          some content after the content of an element.
+
+        contetn property is required
+      */
+      #ul2 li::before{
+        content: url('/images/iconfinder_38_62695.png');
+        margin-right: 10px;
+      }
+
+      #ul2 li::after{
+        content: "$";
+        color: red;
+        font-style: italic;
+        margin-left: 5px;
+      }
+
+      .link{
+        display: block;
+        text-decoration: none;
+        padding: 8px 16px;
+        color: black;
+        text-transform: capitalize;
+      }
+      .link::after{
+        content: "(" attr(href) ")";
+
+        margin-left: 10px;
+        text-transform: lowercase;
+        font-size: 85%;
+        color: #636363;
+        font-style: italic;
+      }
+
+      /*
+        CSS - The ::marker Pseudo-element
+          The ::marker pseudo-element selects the markers of list items.
+      */
+      li::marker{
+        color: green;
+        font-style: italic;
+      }
+
+      /*
+        CSS - The ::selection Pseudo-element
+          The ::selection pseudo-element matches the portion of an element 
+          that is selected by a user.
+
+        properties =>
+          color
+          background-color
+      */
+      ::selection{
+        color: red;
+        background-color: yellow;;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="p1">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde nihil
+      dolore quaerat iste autem aliquid dolorum quam aspernatur animi, aliquam,
+      cum veniam tenetur eveniet delectus consectetur earum! Magni, vitae illo?
+      dolore quaerat iste autem aliquid dolorum quam aspernatur animi, aliquam,
+      cum veniam tenetur eveniet delectus consectetur earum! Magni, vitae illo?
+      dolore quaerat iste autem aliquid dolorum quam aspernatur animi, aliquam,
+      cum veniam tenetur eveniet delectus consectetur earum! Magni, vitae illo?
+      dolore quaerat iste autem aliquid dolorum quam aspernatur animi, aliquam,
+      cum veniam tenetur eveniet delectus consectetur earum! Magni, vitae illo?
+      dolore quaerat iste autem aliquid dolorum quam aspernatur animi, aliquam,
+      cum veniam tenetur eveniet delectus consectetur earum! Magni, vitae illo?
+    </p>
+    <ol>
+      <li><span class="before"></span>Item 1<span class="after">&dollar;</span></li>
+      <li><span class="before"></span>Item 2<span class="after">&dollar;</span></li>
+      <li><span class="before"></span>Item 3<span class="after">&dollar;</span></li>
+      <li><span class="before"></span>Item 4<span class="after">&dollar;</span></li>
+      <li><span class="before"></span>Item 5<span class="after">&dollar;</span></li>
+    </ol>
+    <ul id="ul2">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+    </ul>
+    <a target="_blank" class="link" href="http://mftplus.ir">Mojtame Fanni</a>
+    <a target="_blank" class="link" href="http://www.sematec-co.com/">Sematec</a>
+    <a target="_blank" class="link" href="https://www.w3schools.com/">w3schools</a>
+    <a target="_blank" class="link" href="https://www.tutorialsteacher.com/">tutorials teacher</a>
+  </body>
+</html>

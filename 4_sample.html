@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* body{background-color: palevioletred;} */
+      .triangle {
+        margin: 100px;
+        /* background-color: #ccc; */
+        width: 0;
+        height: 0;
+
+        border-top: 50px solid red;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+      }
+
+
+      .tooltip{
+        margin: 150px;
+        width: 350px;
+        background-color: rgb(176, 243, 252);
+        padding: 16px;
+        border-radius: 8px;
+        position: relative;
+      }
+      .tooltip::after{
+        content: '';
+        border-top: 30px solid rgb(176, 243, 252);
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        position: absolute;
+
+        top: 100%;
+        left: calc(50% - 30px);
+        /* margin-left: -30px; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="triangle"></div>
+
+    <div class="tooltip">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro nulla
+      ipsam rem exercitationem culpa, illum, quae, suscipit delectus ex iste
+      ipsa! Quasi tempora hic minus assumenda et excepturi harum ex!
+    </div>
+  </body>
+</html>

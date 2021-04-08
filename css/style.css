@@ -105,6 +105,15 @@ ul{
   background-color: black;
   color: white;
 }
+
+#header .top-nav a.has-submenu::after{
+  content: '';
+  display: inline-block;
+  margin-left: 5px;
+  border-top: 5px solid;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
 /***** end of top nav ******/
 /***** end of header *******/
 
