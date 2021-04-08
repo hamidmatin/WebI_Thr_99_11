@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{box-sizing: border-box;}
+    body{
+      margin: 0;
+    }
+    .nav{
+      background-color: #f4511e;
+      height: 50px;
+    }
+    .nav ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav > ul > li{
+      float: left;
+    }
+
+    .nav a{
+      text-decoration: none;
+      color: white;
+      display: block;
+      line-height: 50px;
+      height: 50px;
+      padding: 0 16px;
+      background-color: #f4511e;
+    }
+    /* .nav a:hover{
+      background-color: #fff;
+      color: #f4511e;
+    } */
+
+    .nav ul li:hover > a{
+      background-color: #fff;
+      color: #f4511e;
+    }
+    .nav ul li ul{
+      position: absolute;
+      visibility: hidden;
+      z-index: 1000;
+    }
+    .nav ul li:hover > ul{
+      visibility: visible;
+    }
+
+
+
+    .banner{
+      position: relative;
+    }
+    .banner img{
+      display: block;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <ul>
+      <li><a href="#">Menu 1</a></li>
+      <li>
+        <a href="#">Menu 2</a>
+        <ul>
+          <li><a href="#">Menu Item 2 - 1</a></li>
+          <li><a href="#">Menu Item 2 - 2</a></li>
+          <li><a href="#">Menu Item 2 - 3</a></li>
+          <li><a href="#">Menu Item 2 - 4</a></li>
+          <li><a href="#">Menu Item 2 - 5</a></li>
+          <li><a href="#">Menu Item 2 - 6</a></li>
+          <li><a href="#">Menu Item 2 - 7</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Menu 3</a></li>
+      <li><a href="#">Menu 4</a></li>
+      <li>
+        <a href="#">Menu 5</a>
+        <ul>
+          <li><a href="#">Menu Item 5 - 1</a></li>
+          <li><a href="#">Menu Item 5 - 2</a></li>
+          <li><a href="#">Menu Item 5 - 3</a></li>
+          <li><a href="#">Menu Item 5 - 4</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Menu 6</a></li>
+    </ul>
+  </div>
+  <div class="banner">
+    <img src="images/fernando-puente-eu2EP0CGWz4-unsplash.jpg" alt="">
+  </div>
+</body>
+</html>
