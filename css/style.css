@@ -3,20 +3,21 @@
 }
 :root{
   --primary-color: #4CAF50;
+  --primary-color-hover: #46a049;
   --top-height: 80px;
   --top-nav-height: 44px;
   --top-position: calc(var(--top-height) + var(--top-nav-height));
   --aside-left-width: 15%;
 }
 body {
-  margin: 0;height: 1500px;
+  margin: 0;
+  height: 1500px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
 }
 
-.row::after {
-  content: '';
-  display: block;
-  clear: both;
+.row {
+  overflow: auto;
 }
 
 a{
@@ -24,13 +25,18 @@ a{
   color: black;
 }
 
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 /***** header *****/
 
 #header{
   background-color: #fff;
   width: 100%;
   position: fixed;
-  z-index: 100;
+  z-index: 1000;
   left: 0;
   top: 0;
 }
@@ -109,8 +115,30 @@ a{
   top: var(--top-position);
   width: var(--aside-left-width);
   height: calc(100vh - var(--top-position));
-  background-color: rgb(219, 131, 131);
+  background-color: #f1f1f1;
   overflow-y: auto;
+  padding-top: 16px;
+}
+.aside-left h2{
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 21px;
+}
+
+.aside-left a{
+  display: block;
+  padding: 2px;
+}
+.aside-left h2, .aside-left a{
+  padding-left: 16px;
+}
+.aside-left a.active{
+  background-color: var(--primary-color) ;
+  color: #fff;
+}
+.aside-left a:hover:not(.active){
+  background-color: #cccccc;
 }
 /******** end of aside ******/
 
@@ -128,6 +156,9 @@ a{
   background-color: var(--primary-color);
   color: white;
   padding: 8px 16px;
+}
+.button:hover{
+  background-color: var(--primary-color-hover);
 }
 .float-left{
   float: left !important;
