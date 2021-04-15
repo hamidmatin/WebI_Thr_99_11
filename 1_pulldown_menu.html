@@ -32,6 +32,8 @@
       height: 50px;
       padding: 0 16px;
       background-color: #f4511e;
+
+      transition: all .3s;
     }
     /* .nav a:hover{
       background-color: #fff;
@@ -42,17 +44,78 @@
       background-color: #fff;
       color: #f4511e;
     }
-    .nav ul li ul{
+    .nav ul ul{
       position: absolute;
       visibility: hidden;
       z-index: 1000;
+      /* opacity: 1; */
+      /* opacity: .8; */
+      /* opacity: .5; */
+      /* opacity: .2; */
+      opacity: 0;
+
+      transition: all .3s;
     }
     .nav ul li:hover > ul{
       visibility: visible;
+      opacity: 1;
+    }
+    /*******************/
+    .nav li{
+      position: relative;
+    }
+    .nav ul ul a{
+      min-width: 200px;
+      white-space: nowrap;
+      padding-right: 32px;
+      /* background-color: dodgerblue; */
+    }
+    .nav ul ul li:hover > a{
+      /* background-color: darkblue; */
+    }
+    .nav ul ul ul{
+      top: 100px;
+      left: 100%;
+      /* border-top: none;
+      border-left: 5px solid transparent; */
+
+      padding-top: 0;
+      padding-left: 5px;
     }
 
+    .nav ul ul {
+      /* margin-top: 5px; */
+      
+      /* راه اول */
+      /* border-top: 5px solid transparent; */
+      /* راه دوم */
+      padding-top: 5px;
+    }
+    .nav ul ul li:hover > ul{
+      top: 0;
+    }
 
+    .nav ul .has-submenu::after{
+      content: '';
+      display: inline-block;
+      border-top: 5px solid;
+      border-right: 5px solid transparent;
+      border-left: 5px solid transparent;
+      margin-left: 10px;
+    }
 
+    .nav ul ul .has-submenu{
+      position: relative;
+    }
+    .nav ul ul .has-submenu::after{
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-left: 5px solid;
+      position: absolute;
+      top: calc(50% - 5px);
+      right: 5px;
+    }
+    /**************/
     .banner{
       position: relative;
     }
@@ -67,11 +130,31 @@
     <ul>
       <li><a href="#">Menu 1</a></li>
       <li>
-        <a href="#">Menu 2</a>
+        <a href="#" class="has-submenu">Menu 2</a>
         <ul>
           <li><a href="#">Menu Item 2 - 1</a></li>
           <li><a href="#">Menu Item 2 - 2</a></li>
-          <li><a href="#">Menu Item 2 - 3</a></li>
+          <li>
+            <a href="#" class="has-submenu">Menu Item 2 - 3 dkaj adafsdsja sidsgd </a>
+            <ul>
+              <li><a href="#">Menu Item 2 - 3 - 1</a></li>
+              <li><a href="#">Menu Item 2 - 3 - 2</a></li>
+              <li><a href="#">Menu Item 2 - 3 - 3</a></li>
+              <li>
+                <a href="#" class="has-submenu">Menu Item 2 - 3 - 4</a>
+                <ul>
+                  <li><a href="#">Menu Item 2 - 3 - 4 - 1</a></li>
+                  <li><a href="#">Menu Item 2 - 3 - 4 - 2</a></li>
+                  <li><a href="#">Menu Item 2 - 3 - 4 - 3</a></li>
+                  <li><a href="#">Menu Item 2 - 3 - 4 - 4</a></li>
+                  <li><a href="#">Menu Item 2 - 3 - 4 - 5</a></li>
+                  <li><a href="#">Menu Item 2 - 3 - 4 - 6</a></li>
+                  <li><a href="#">Menu Item 2 - 3 - 4 - 7</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Menu Item 2 - 3 - 5</a></li>
+            </ul>
+          </li>
           <li><a href="#">Menu Item 2 - 4</a></li>
           <li><a href="#">Menu Item 2 - 5</a></li>
           <li><a href="#">Menu Item 2 - 6</a></li>
@@ -81,12 +164,12 @@
       <li><a href="#">Menu 3</a></li>
       <li><a href="#">Menu 4</a></li>
       <li>
-        <a href="#">Menu 5</a>
+        <a href="#" class="has-submenu">Menu 5</a>
         <ul>
-          <li><a href="#">Menu Item 5 - 1</a></li>
-          <li><a href="#">Menu Item 5 - 2</a></li>
-          <li><a href="#">Menu Item 5 - 3</a></li>
-          <li><a href="#">Menu Item 5 - 4</a></li>
+          <li><a href="#">Menu 5 - 1</a></li>
+          <li><a href="#">Menu 5 - 2</a></li>
+          <li><a href="#">Menu 5 - 3</a></li>
+          <li><a href="#">Menu 5 - 4</a></li>
         </ul>
       </li>
       <li><a href="#">Menu 6</a></li>
