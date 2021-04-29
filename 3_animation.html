@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @keyframes anim4 {
+      0%, 100%{
+        top: 0;
+        left: 0;
+      }
+      25%{
+        top: 0;
+        left: 400px;
+      }
+      35%, 65%{
+        top: 400px;
+        left: 400px;
+      }
+      /* 65%{
+        top: 400px;
+        left: 400px;
+        
+      } */
+      75%{
+        top: 400px;
+        left: 0;
+      }
+      /* 100%{
+        top: 0;
+        left: 0;
+      } */
+    }
+    @keyframes anim5 {
+      0%, 25%, 100%{
+        top: 0;
+      }
+      35%, 65%, 75%{
+        top: 400px;
+      }
+      0%, 75%, 100%{
+        left: 0;
+      }
+      35%, 65%, 25%{
+        left: 400px;
+      }
+    }
+    #div1 {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      left: 0;
+      top: 0;
+
+      
+      animation: anim5 6s 1s linear 2;
+    }
+   
+  </style>
+</head>
+<body>
+  <div id="div1">Anim</div>
+</body>
+</html>

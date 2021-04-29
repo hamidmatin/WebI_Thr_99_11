@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @keyframes anim2 {
+        0% {
+          width: 50px;
+          height: 50px;
+          background-color: blue;
+          left: 0;
+          top: 0;
+          transform: rotate(0);
+        }
+        50%{
+          width: 50px;
+          height: 50px;
+          left: 500px;
+          top: 300px;
+          transform: rotate(0);
+        }
+        100% {
+          width: 300px;
+          height: 300px;
+          background-color: green;
+          left: 500px;
+          top: 300px;
+          transform: rotate(45deg);
+        }
+      }
+
+      #div1 {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        left: 0;
+        top: 0;
+
+        animation-name: anim2;
+        animation-duration: 3s;
+        animation-delay: 3s;
+        animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        animation-timing-function: linear;
+
+        animation-iteration-count: 1;
+        animation-iteration-count: 2;
+        animation-iteration-count: infinite;
+        animation-iteration-count: 3;
+
+        animation-direction: normal;
+        animation-direction: reverse;
+        animation-direction: alternate;
+        /* animation-direction: alternate-reverse; */
+
+        animation-fill-mode: none;
+        animation-fill-mode: backwards;
+        animation-fill-mode: forwards;
+        animation-fill-mode: both;
+
+        
+        /*
+            shorthand
+            animation: name duration delay timing-function itration-cont direction fill-mode;
+        */
+
+        animation: anim2 3s 3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3 both alternate;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1"></div>
+  </body>
+</html>
