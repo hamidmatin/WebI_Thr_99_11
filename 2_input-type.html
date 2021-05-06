@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <title>Document</title>
+    <style>
+      .row {
+        margin-bottom: 10px;
+      }
+      .label-control {
+        color: blue;
+        display: inline-block;
+        width: 80px;
+      }
+      /* input{
+        outline: none;
+      } */
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <div class="row">
+        <span class="label-control">text</span>
+        <input type="text" name="text" value="my text" readonly/>
+      </div>
+      <div class="row">
+        <label class="label-control" for="text">text</label>
+        <input id="text" type="text" name="text" value="Tetx" disabled/>
+      </div>
+      <div class="row">
+        <label class="label-control" for="password">password</label>
+        <input id="password" type="password" name="password" placeholder="Enter password" required/>
+      </div>
+      <div class="row">
+        <label class="label-control" for="email">email</label>
+        <input id="email" type="email" name="email" />
+      </div>
+      <div class="row">
+        <label class="label-control" for="tel">tel</label>
+        <input id="tel" type="tel" name="tel" minlength="3" maxlength="10"/>
+      </div>
+      <div class="row">
+        <label class="label-control" for="number">number</label>
+        <input id="number" type="number" name="number" min="-10" max="10"/>
+      </div>
+      <div class="row">
+        <label class="label-control" for="range">range</label>
+        <input id="range" type="range" name="range" min="-10" max="10" />
+      </div>
+      <div class="row">
+        <label class="label-control" for="file">file</label>
+        <input id="file" type="file" name="file" disabled/>
+      </div>
+      <div class="row">
+        <label class="label-control" for="date">date</label>
+        <input id="date" type="date" name="date" />
+      </div>
+      <div class="row">
+        <label class="label-control" for="color">color</label>
+        <input id="color" type="color" name="color" value="#ff00ff" />
+      </div>
+      <div class="row">
+        <label class="label-control" for="checkbox1">checkbox1</label>
+        <input id="checkbox1" type="checkbox" name="checkbox1" checked/>
+        <label class="label-control" for="checkbox2">checkbox2</label>
+        <input id="checkbox2" type="checkbox" name="checkbox2" disabled checked/>
+        <label class="label-control" for="checkbox3">checkbox3</label>
+        <input id="checkbox3" type="checkbox" name="checkbox3" />
+      </div>
+      <div class="row">
+        <label class="label-control"
+          >radio1
+          <input type="radio" name="radio" value="r1" checked/>
+        </label>
+
+        <label class="label-control"
+          >radio2
+          <input type="radio" name="radio" value="r2" />
+        </label>
+
+        <label class="label-control"
+          >radio3
+          <input type="radio" name="radio" value="r3" />
+        </label>
+      </div>
+
+      <hr />
+      <div class="row">
+        <label class="label-control" for="select">select</label>
+        <select name="select" id="select">
+          <option value="0">Option 1</option>
+          <option value="1" selected>Option 2</option>
+          <option value="2">Option 3</option>
+          <option value="3">Option 4</option>
+        </select>
+      </div>
+      <div class="row">
+        <label class="label-control" for="select-multi">select multi</label>
+        <select name="select_multi" id="select-multi" multiple>
+          <option value="0">Option 1</option>
+          <option value="1" selected>Option 2</option>
+          <option value="2">Option 3</option>
+          <option value="3">Option 4</option>
+        </select>
+      </div>
+      <div class="row">
+        <label class="label-control" for="textarea">textarea</label>
+        <textarea name="textarea" id="textarea" rows="5" cols="50"></textarea>
+      </div>
+
+      <hr />
+      <div class="row">
+        <input type="submit" value="SEND" />
+        <input type="reset" />
+        <input type="button" value="Button" />
+        <hr />
+        <button type="submit">SEND <i class="far fa-paper-plane"></i></button>
+        <button type="reset">Reset</button>
+        <button type="button">Button</button>
+      </div>
+    </form>
+  </body>
+</html>

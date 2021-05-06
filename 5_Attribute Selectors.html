@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*
+        Attribute Selectors
+        (1) selector[atribute]{ ... }
+          The [attribute] selector is used to select elements with a specified attribute.
+      */
+
+      a[target] {
+        background-color: yellow;
+      }
+      /*
+        Attribute Selectors
+        (2) selector[atribute="value"]{ ... }
+        (2) selector[atribute='value']{ ... }
+        (2) selector[atribute=value]{ ... }
+
+          The [attribute="value"] selector is used to select elements 
+          with a specified attribute and value.
+      */
+      a[target='_blank'] {
+        color: red;
+      }
+      input[type='text'] {
+        background-color: lightblue;
+      }
+      input[type='password'] {
+        background-color: lightsalmon;
+      }
+      input[type='password']:focus {
+        background-color: rgb(233, 122, 255);
+      }
+
+      /*
+        Attribute Selectors
+        (3) selector[atribute|="value"]{ ... }
+
+          The value has to be a whole word, either alone, like class="top", 
+          or followed by a hyphen( - ), like class="top-text"! 
+      */
+      [class|='top'] {
+        background: yellow;
+      }
+
+      /*
+        Attribute Selectors
+        (4) selector[atribute^="value"]{ ... }
+
+          attribute value begins with a specified value.
+      */
+      [class^='top'] {
+        font-size: 60px;
+      }
+
+      /*
+        Attribute Selectors
+        (5) selector[atribute$="value"]{ ... }
+
+          attribute value ends with a specified value.
+      */
+      [class$='test'] {
+        color: red;
+      }
+      a[href$=".pdf"]::after{
+
+      }
+      /*
+        Attribute Selectors
+        (6) selector[atribute~="value"]{ ... }
+
+          attribute value containing a specified word
+      */
+      [title~='flower'] {
+        border-bottom: 3px solid rgb(0, 140, 255);
+      }
+      /*
+        Attribute Selectors
+        (7) selector[atribute*="value"]{ ... }
+
+          attribute value contains a specified value.
+      */
+      [class*='te'] {
+        text-decoration: line-through;
+      }
+
+      /************/
+      .nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .nav ul li {
+        float: left;
+        padding: 1em 2em;
+        margin: 0 5px;
+        background-color: #cccccc;
+      }
+      [dir='rtl'] .nav ul li {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://www.w3schools.com">w3schools.com</a>
+    <a href="http://www.disney.com" target="_blank">disney.com</a>
+    <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+    <input type="text" />
+    <input type="password" />
+
+    <h1 class="top-header">Welcome</h1>
+    <p class="top-text" title="tree">Hello world!</p>
+    <p class="top" title="treeflower">Hello world!</p>
+    <p class="topcontent">Are you learning CSS?</p>
+    <p class="mycontent top-s">Are you learning CSS?</p>
+    <hr />
+
+    <div class="first_test" title="flower">The first div element.</div>
+    <div class="second">The second div element.</div>
+    <div class="my-test" title="klematis flower asfaf">
+      The third div element.
+    </div>
+    <p class="mytest">This is some text in a paragraph.</p>
+    <hr />
+    <div class="nav">
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+      </ul>
+    </div>
+  </body>
+</html>
